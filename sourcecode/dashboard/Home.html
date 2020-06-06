@@ -1,0 +1,273 @@
+<html>
+<head>
+<title>Dashboard</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet"
+	href="dashboard.css">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="dashboard.js"></script>
+<script>
+$(document).ready(function(){
+    $("#trigg").hide();
+});
+$(document).ready(function(){
+  $("#triggercall").click(function(){
+        alert("Please listen to the IVR Call Demo");
+  });
+});
+</script>
+<script type='text/javascript'>
+
+function check()
+{
+    alert("IVR Call is triggered successfully");
+}
+
+function reminder()
+{
+    alert("Reminder is sent to user successfully");
+}
+
+</script>
+<style>
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}</style>
+</head>
+<div id="wrapper">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+   <nav class="navbar navbar.default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WiT Hackaholics</a>
+    </div>
+    
+    <ul class="nav navbar-nav navbar-right">
+   
+    </ul>
+  </div>
+</nav>
+    <!-- Top Menu Items -->
+   
+    <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav side-nav">
+        <li class="active">
+	
+		 <a href="#"  id='idtrigger' onclick='check()'><i class="fa fa-fw fa-wrench" ></i> Trigger a call</a> 
+        </li>
+		
+		<li>
+          <a href="#" onclick='reminder()'><i class="fa fa-fw fa-wrench"></i> Reminder call </a>
+        </li>
+<li>
+          <a href="Menu.html"><i class="fa fa-fw fa-wrench"></i> Menu configuration</a>
+        </li>
+<li>
+         
+		   <a href="dashboard.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+        </li>
+        <li>
+          <a href="https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=eu-gb&integrationID=37d7b09f-4570-4275-bf98-2e846ed766c7&serviceInstanceID=37c0da18-032f-4270-a480-eab4b1dcfbc7"><i class="fa fa-fw fa-wrench"></i> Chat bot</a>
+        </li>
+
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </nav>
+
+  <div id="page-wrapper">
+
+    <div class="container-fluid">
+
+      <!-- Page Heading -->
+      <div class="row" >
+        <div class="col-lg-12">
+		<br>
+		<h1 class="page-header">
+                           What you want to do today? 
+                        </h1>
+		  <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+
+  
+  
+  <div class="col-md-6" >
+		<a href="#">
+		<br>
+			<button  onclick='check()'>Trigger a call</button>
+		</a>
+	</div>
+
+	<div class="col-md-6" align="right" style="margin: 0;padding-right: 30px;">
+		<a>
+		<button onclick="location.href = 'Menu.html';">Menu configuration</button>
+		
+		</button>
+		</a>
+		
+	</div>
+
+   
+  </div>
+</div>
+          <div>
+		  <br>
+		  
+		  </div>
+		  
+						
+						
+          <ol class="breadcrumb">
+            <li class="active">
+			 <br>
+			 <br>
+		  <br>
+		  
+              <i class="fa fa-dashboard"></i> Our Survey Results:   
+Please find the survey results till date.
+
+            </li>
+          </ol>
+        </div>
+      </div>
+	  
+	
+      <!-- /.row -->
+
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-xs-3">
+                  <i class="fa fa-comments fa-5x"></i>
+                </div>
+                <div class="col-xs-9 text-right">
+                  <div class="huge">6389</div>
+                  <div>People participated in survey</div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="panel panel-green">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-xs-3">
+                  <i class="fa fa-tasks fa-5x"></i>
+                </div>
+                <div class="col-xs-9 text-right">
+                  <div class="huge">5089</div>
+                  <div>people are healthy</div>
+                </div>
+              </div>
+            </div>
+          
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="panel panel-yellow">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-xs-3">
+                  <i class="fa fa-shopping-cart fa-5x"></i>
+                </div>
+                <div class="col-xs-9 text-right">
+                  <div class="huge">2</div>
+                  <div>Alerts</div>
+                </div>
+              </div>
+            </div>
+       
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="panel panel-red">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-xs-3">
+                  <i class="fa fa-support fa-5x"></i>
+                </div>
+                <div class="col-xs-9 text-right">
+                  <div class="huge">1300</div>
+                  <div>people affected</div>
+                </div>
+              </div>
+            </div>
+         
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+	  
+	 
+   
+      <!-- /.row -->
+
+    <!-- /.container-fluid -->
+
+  </div>
+  <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+<br>
+<br>
+
+
+
+<div class="row" style="background-color:#63666A;">
+		<div class="col-md-6" style="padding-right: 0px; padding-left: 0px;padding-top:20px;">
+		<div class="social flex-item-content">
+			<div class="social__desc">
+				<div>
+				<p class="social__list__desc subhead-small" style="padding-left:30px; font-size:20px;">Follow us</p>
+				</div>
+			</div>
+			<nav role="navigation" aria-label="Footer Social Media Navigation">
+				<ul class="footernav__social__item horizontal-list unstyled"  style="color: white;">
+					<li class="social_list footer_social_icons ">
+						<a class="social__links linkedin circle" target="_blank" lpos="footer nav : social icons"> <span class="assistText" style="color: white;">LinkedIn</span> <span class="fa fa-linkedin" aria-hidden="true"></span> 
+						</a>
+					</li>
+					<li class="social_list footer_social_icons ">
+						<a class="social__links twitter circle" target="_blank"  lpos="footer nav : social icons"> <span class="assistText"style="color: white;">Twitter</span> <span class="fa fa-twitter" aria-hidden="true"></span> 
+						</a>
+					</li>
+					<li class="social_list footer_social_icons ">
+						<a class="social__links youtube circle" target="_blank"  lpos="footer nav : social icons"> <span class="assistText"style="color: white;">YouTube</span> <span class="fa fa-youtube" aria-hidden="true"></span> 
+						</a>
+					</li>
+					
+				</ul>
+			</nav>
+		</div>
+		</div>
+		
+	</div>
+
+
+</html>

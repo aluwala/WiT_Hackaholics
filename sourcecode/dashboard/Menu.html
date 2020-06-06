@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+logo {
+  background-color: #4CAF50;
+  
+}
+</script>
+</head>
+<body>
+<div  id="logo">
+		
+			 <a >
+			 <img class="img-responsive" alt="loading" src="image/logo1.png" style="margin:12px">
+			 </a>
+	
+	</div>
+
+<h2>Select the required Menu</h2>
+
+<!--surround the select box with a "custom-select" DIV element. Remember to set the width:-->
+<div class="custom-select" style="width:80%;">
+<label for="Menu">Choose Menu:</label>
+  <select name="Menu" id="Menu" multiple>
+    <option value="0">Select from below questions:</option>
+	 <option value="1">Language selection:1. Telugu 2. Hindi 3. English</option>
+	<option value="2">Select Pin code: enter response</option>
+    <option value="3">How are you feeling these days? Mention your symptoms</option>
+    <option value="4">Are you having any of these right now? 1. Diabetes 2. Hypertension  3. Lung disease  4. Heart disease  5. None</option>
+    <option value="5">About traveling details</option>
+    <option value="6"> what kind of work you do?</option>
+    <option value="7">industry you work for?</option>
+    <option value="8">are you in facing any emergency?</option>
+    <option value="9">Do you want to enroll for "Schedule of Services" within your location? </option>
+  </select>
+   <br><br>
+  <button onclick="myFunction()">Submit</button>
+  <br>
+  <p id="demo"></p>
+  
+<div id="holder"></div>
+<script>
+function myFunction() {
+
+//var e = document.getElementById("Menu");
+//var strUser = e.options[e.selectedIndex].text;
+//console.log(strUser.length);
+var e="The selected Menu is:";
+
+  var selected = [];
+  for (var option of document.getElementById('Menu').options) {
+    if (option.selected) {
+	selected=selected+option.text;
+	selected=selected+"<br/>"
+      //selected.push(option.text);
+	  //selected.push("<br/>")
+    }
+  }
+  //var formattedString = selected.split(",").join("<br />")
+  document.getElementById("demo").innerHTML=e;
+  document.getElementById("demo").innerHTML = selected;
+
+
+
+}
+</script>
+
+
+ </form>
+</div>
+
+</body>
+</html>
+
