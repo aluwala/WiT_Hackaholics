@@ -1,1 +1,2 @@
-# WiT_Hackaholics
+# Hackaholics
+
